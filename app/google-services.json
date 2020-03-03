@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "12277802490",
+    "firebase_url": "https://censusa-b6a45.firebaseio.com",
+    "project_id": "censusa-b6a45",
+    "storage_bucket": "censusa-b6a45.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:12277802490:android:27d01e9a8980103f7c3043",
+        "android_client_info": {
+          "package_name": "com.example.censusa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "12277802490-172r1iuhdhg9l7brqkn75jkjhie4lh8t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.censusa",
+            "certificate_hash": "c77d36f161288c206583aa18362abfb5832115d1"
+          }
+        },
+        {
+          "client_id": "12277802490-5u2muhrjuafqbfprp3n1g6mjifd2a293.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcZbZQq592vm8a0G0iDceEzJKBf5XHB-U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "12277802490-5u2muhrjuafqbfprp3n1g6mjifd2a293.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

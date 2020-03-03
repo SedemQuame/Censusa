@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Censusa</string>
+    <string name="user_name">Username</string>
+    <string name="user_email">Email</string>
+    <string name="user_password">Password</string>
+    <string name="appbanner">appBanner</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="profile">profile</string>
+    <string name="individual">individual</string>
+    <string name="company">company</string>
+    <string name="sample_txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+    <string name="submit">Submit</string>
+</resources>

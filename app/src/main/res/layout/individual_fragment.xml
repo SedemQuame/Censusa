@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="50dp">
+
+
+        <EditText
+            android:id="@+id/personFullName"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/textview"
+            android:ems="10"
+            android:hint="Full name"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/IndividualTxtView"
+            app:layout_constraintStart_toStartOf="@+id/IndividualTxtView"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Gather information, on the various people in your community, preferrably from people deemed to be matured and of sane mind."
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="@+id/IndividualTxtView"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/IndividualTxtView"
+            app:layout_constraintTop_toBottomOf="@+id/IndividualTxtView" />
+
+        <EditText
+            android:id="@+id/occupation"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/textview"
+            android:ems="10"
+            android:hint="Occupation"
+            android:inputType="text"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/nationality"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/nationality"
+            app:layout_constraintTop_toBottomOf="@+id/nationality" />
+
+        <EditText
+            android:id="@+id/dateOfBirth"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/textview"
+            android:ems="10"
+            android:hint="Date of Birth"
+            android:inputType="date"
+            android:padding="10dp"
+            app:layout_constraintStart_toStartOf="@+id/numberOfFamilyMembers"
+            app:layout_constraintTop_toBottomOf="@+id/numberOfFamilyMembers" />
+
+        <EditText
+            android:id="@+id/gender"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/textview"
+            android:ems="10"
+            android:hint="Gender"
+            android:inputType="text"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/occupation"
+            app:layout_constraintStart_toStartOf="@+id/occupation"
+            app:layout_constraintTop_toBottomOf="@+id/occupation" />
+
+        <EditText
+            android:id="@+id/residentialStatus"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/textview"
+            android:ems="10"
+            android:hint="Residential status"
+            android:inputType="text"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/maritalStatus"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/maritalStatus"
+            app:layout_constraintTop_toBottomOf="@+id/maritalStatus" />
+
+        <EditText
+            android:id="@+id/nationality"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/textview"
+            android:ems="10"
+            android:hint="Nationality"
+            android:inputType="text"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/personNameOfMother"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/dateOfBirth"
+            app:layout_constraintTop_toBottomOf="@+id/dateOfBirth" />
+
+        <TextView
+            android:id="@+id/IndividualTxtView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:capitalize="words"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Individual"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/personNameOfMother"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/textview"
+            android:ems="10"
+            android:hint="Mother's name"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/personFatherName"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/personFatherName"
+            app:layout_constraintTop_toBottomOf="@+id/personFatherName" />
+
+        <EditText
+            android:id="@+id/maritalStatus"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/textview"
+            android:ems="10"
+            android:hint="Marital status"
+            android:inputType="text"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/gender"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/gender"
+            app:layout_constraintTop_toBottomOf="@+id/gender" />
+
+        <EditText
+            android:id="@+id/numberOfFamilyMembers"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/textview"
+            android:ems="10"
+            android:hint="No. of family members"
+            android:inputType="number"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/personNameOfMother"
+            app:layout_constraintStart_toStartOf="@+id/personNameOfMother"
+            app:layout_constraintTop_toBottomOf="@+id/personNameOfMother" />
+
+        <EditText
+            android:id="@+id/personFatherName"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/textview"
+            android:ems="10"
+            android:hint="Father's name"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/personFullName"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/personFullName"
+            app:layout_constraintTop_toBottomOf="@+id/personFullName" />
+
+        <EditText
+            android:id="@+id/personAge"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:autofillHints=""
+            android:background="@drawable/textview"
+            android:ems="10"
+            android:hint="Age"
+            android:inputType="number"
+            android:padding="10dp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/dateOfBirth"
+            app:layout_constraintEnd_toEndOf="@+id/personNameOfMother"
+            app:layout_constraintStart_toEndOf="@+id/dateOfBirth" />
+
+        <Button
+            android:id="@+id/submitIndividualDataBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/rounded_button"
+            android:text="@string/submit"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/residentialStatus"
+            app:layout_constraintStart_toStartOf="@+id/residentialStatus"
+            app:layout_constraintTop_toBottomOf="@+id/residentialStatus" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

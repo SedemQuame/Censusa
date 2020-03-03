@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="50dp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:capitalize="words"
+            android:fontFamily="@font/roboto_medium"
+            android:inputType="text"
+            android:text="Company"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="22sp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Gather information, on various companies operating in you immediate community."
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView4"
+            app:layout_constraintStart_toStartOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <EditText
+            android:id="@+id/companyNameEdt"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/textview"
+            android:ems="10"
+            android:hint="Company name"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView6"
+            app:layout_constraintStart_toStartOf="@+id/textView6"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <EditText
+            android:id="@+id/companyCategoryEdt"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/textview"
+            android:ems="10"
+            android:hint="Category"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/companyNameEdt"
+            app:layout_constraintStart_toStartOf="@+id/companyNameEdt"
+            app:layout_constraintTop_toBottomOf="@+id/companyNameEdt" />
+
+        <EditText
+            android:id="@+id/minWageEdt"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/textview"
+            android:ems="10"
+            android:hint="Min Wage"
+            android:inputType="numberSigned"
+            android:padding="10dp"
+            app:layout_constraintStart_toStartOf="@+id/numberOfEmployedCitizens"
+            app:layout_constraintTop_toBottomOf="@+id/numberOfEmployedCitizens" />
+
+        <EditText
+            android:id="@+id/maxWageEdt"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/textview"
+            android:ems="10"
+            android:hint="Max Wage"
+            android:inputType="number"
+            android:padding="10dp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/minWageEdt"
+            app:layout_constraintEnd_toEndOf="@+id/numberOfEmployedCitizens"
+            app:layout_constraintStart_toEndOf="@+id/minWageEdt" />
+
+        <EditText
+            android:id="@+id/companyPostalAddressEdt"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/textview"
+            android:ems="10"
+            android:hint="Postal Address"
+            android:inputType="textPostalAddress"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/compnayPhone"
+            app:layout_constraintStart_toStartOf="@+id/compnayPhone"
+            app:layout_constraintTop_toBottomOf="@+id/compnayPhone" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="32dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="@+id/maxWageEdt"
+            app:layout_constraintStart_toStartOf="@+id/minWageEdt"
+            app:layout_constraintTop_toBottomOf="@+id/minWageEdt" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="@+id/dateFoundedEdt"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/dateFoundedEdt"
+            app:layout_constraintTop_toBottomOf="@+id/dateFoundedEdt" />
+
+        <EditText
+            android:id="@+id/numberOfEmployedCitizens"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/textview"
+            android:ems="10"
+            android:hint="Actively Employed Citizens"
+            android:inputType="numberSigned"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/divider"
+            app:layout_constraintStart_toStartOf="@+id/divider"
+            app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+        <EditText
+            android:id="@+id/dateFoundedEdt"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/textview"
+            android:ems="10"
+            android:hint="Date Founded"
+            android:inputType="date"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/founderEdt"
+            app:layout_constraintStart_toStartOf="@+id/founderEdt"
+            app:layout_constraintTop_toBottomOf="@+id/founderEdt" />
+
+        <EditText
+            android:id="@+id/founderEdt"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/textview"
+            android:ems="10"
+            android:hint="Founders, separated by commas"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/companyCategoryEdt"
+            app:layout_constraintStart_toStartOf="@+id/companyCategoryEdt"
+            app:layout_constraintTop_toBottomOf="@+id/companyCategoryEdt" />
+
+        <EditText
+            android:id="@+id/companyEmail"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/textview"
+            android:ems="10"
+            android:hint="Company Email"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/divider2"
+            app:layout_constraintStart_toStartOf="@+id/divider2"
+            app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+        <EditText
+            android:id="@+id/compnayPhone"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/textview"
+            android:ems="10"
+            android:hint="Company Phone"
+            android:inputType="phone"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/companyEmail"
+            app:layout_constraintStart_toStartOf="@+id/companyEmail"
+            app:layout_constraintTop_toBottomOf="@+id/companyEmail" />
+
+        <Button
+            android:id="@+id/companySubmitBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_button"
+            android:text="@string/submit"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/companyPostalAddressEdt"
+            app:layout_constraintStart_toStartOf="@+id/companyPostalAddressEdt"
+            app:layout_constraintTop_toBottomOf="@+id/companyPostalAddressEdt" />
+
+        <ProgressBar
+            android:id="@+id/progressBarCompany"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="60dp"
+            android:layout_height="0dp"
+            android:foregroundGravity="center"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/companySubmitBtn"
+            app:layout_constraintEnd_toEndOf="@+id/divider"
+            app:layout_constraintStart_toStartOf="@+id/divider"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
